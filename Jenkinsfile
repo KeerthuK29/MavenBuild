@@ -11,17 +11,17 @@ pipeline{
         }
         stage('Compile code'){
             steps{
-                bat "mvn compile"
+                sh "mvn compile"
             }
         }
         stage('Test'){
             steps{
-                bat "mvn test"
+                sh "mvn test"
             }
         }
         stage('Build'){
             steps{
-                bat "mvn package"
+                sh "mvn package"
                 
             }
         }
