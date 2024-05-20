@@ -1,5 +1,7 @@
 pipeline{
-    agent any
+    agent {
+        docker {image 'maven 3.3.3'}
+    }
     tools{
         maven "MAVEN_HOME"
     }
