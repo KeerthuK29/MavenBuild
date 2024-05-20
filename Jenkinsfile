@@ -1,6 +1,6 @@
 pipeline{
     agent {
-        docker {image  "maven 3.3.3"}
+        docker {image  'maven 3.9.6-adoptopenjdk-21'}
     }
     
     stages{
